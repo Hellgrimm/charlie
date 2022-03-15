@@ -2,7 +2,6 @@
 title: Trainer Trainer
 stack: Gatsby & Shopify
 slug: trainer-trainer
-date: 2021-01-08T00:00:00+00:00
 thumb: ../images/thumbs/shoes.png
 featuredImg: ../images/featured/shoes-banner.png
 ---
