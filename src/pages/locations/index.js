@@ -4,21 +4,21 @@ import Layout from "../../components/Layout"
 import * as styles from "../../styles/characters.module.css"
 import Img from "gatsby-image"
 
-export default function Characters({ data }) {
+export default function Locations({ data }) {
   console.log(data)
-  const characters = data.allMarkdownRemark.nodes
+  const locations = data.allMarkdownRemark.nodes
 
   return (
     <Layout>
     <div className={styles.characters}>
-        <h2>Characters Page</h2>
+        <h2>Locations Page</h2>
         <div className={styles.projects}>
-          {characters.map(character =>(
-            <Link to = {"/characters/" + character.frontmatter.slug} key={character.id}>
+          {locations.map(location =>(
+            <Link to = {"/locations/" + location.frontmatter.slug} key={location.id}>
               <div>
-                <Img fluid={character.frontmatter.thumb.childImageSharp.fluid}/>
-                <h3>{character.frontmatter.title}</h3>
-                <p>{character.frontmatter.stack}</p>
+                <Img fluid={location.frontmatter.thumb.childImageSharp.fluid}/>
+                <h3>{location.frontmatter.title}</h3>
+                <p>{location.frontmatter.stack}</p>
               </div>
             </Link>
           ))}
@@ -30,8 +30,8 @@ export default function Characters({ data }) {
 
 //exports page query
 export const query = graphql`
-query CharactersPage {
-  allMarkdownRemark(filter: {frontmatter: {type: {eq: "characters"}}}) {
+query LocationsPage {
+  allMarkdownRemark(filter: {frontmatter: {type: {eq: "locations"}}}) {
     nodes {
       frontmatter {
         title
