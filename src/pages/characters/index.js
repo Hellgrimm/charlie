@@ -14,7 +14,7 @@ export default function Characters({ data }) {
         <h2>Characters Page</h2>
         <div className={styles.projects}>
           {projects.map(project =>(
-            <Link to = {"/projects" + project.frontmatter.slug} key={project.id}>
+            <Link to = {"/projects/" + project.frontmatter.slug} key={project.id}>
               <div>
                 <Img fluid={project.frontmatter.thumb.childImageSharp.fluid}/>
                 <h3>{project.frontmatter.title}</h3>
