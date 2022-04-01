@@ -23,8 +23,12 @@ h2{
     font-family: 'Oswald',sans-serif;
     line-height: 1.1;
     font-style: normal;
-    color: #1b0914;
+    color: #e0e0e0;
     font-weight: 300;
+}
+
+a {
+  text-decoration: none;
 }
 
 html, body{
@@ -32,33 +36,56 @@ html, body{
 }
 
 body {
-    background: #d6d6d6;
+    background: #8b8b8b;
     background-repeat: no-repeat;
 }
 
+.site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.site-content {
+  flex-grow: 1;
+}
+
 /*Navbar and footer*/
-.layout {
+  .layout {
     max-width: 1200px;
     margin: 0 auto;
   }
   nav {
+    background-color: rgb(31, 31, 31);
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 40px auto;
+    padding: 20px 50px;
+  }
+  nav h1{
+    font-size: 44px;
+    line-height: 1.1;
+    font-style: normal;
+    color: #e0e0e0;
+    font-weight: 300;
   }
   nav .links {
     display: inline-block;
     text-align: right;
+    align-items: center;
   }
   nav a {
+    padding-top: 10px;
     display: inline-block;
+    color: white;
     margin-left: 20px;
     font-weight: 400;
     padding-bottom: 8px;
     border-bottom: 3px solid transparent;
+    text-decoration: none;
   }
   nav a:hover {
     border-color: white;
+    color: white;
   }
   footer p{
     text-align: center;

@@ -15,7 +15,9 @@ export default function Home({ data }) {
       <p>Thats another paragraph. Nice to see you!</p>
       <Link className={styles.btn} to="/characters">To Characters Page</Link>
       </div>
-      <Img fluid={data.file.childImageSharp.fluid}/>
+      <div className={styles.pic}>
+        <Img fluid={data.file.childImageSharp.fluid}/>
+      </div>
     </section>
     </Layout>
   )
@@ -24,7 +26,7 @@ export default function Home({ data }) {
 //exports page query
 export const query = graphql`
 query Steven {
-  file(relativePath: {eq: "steven.jpg"}) {
+  file(relativePath: {eq: "tea.png"}) {
     childImageSharp {
       fluid {
         ...GatsbyImageSharpFluid

@@ -10,6 +10,15 @@
     font-weight: 400;
   }
 
+  a{
+    text-decoration: none;
+  }
+
+  a:hover{
+    opacity: 0.8;
+    text-decoration: none;
+  }
+
   .projects {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;

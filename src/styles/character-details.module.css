@@ -1,6 +1,6 @@
 .details h2 {
     font-size: 3.5em;
-    margin-top: 80px;
+    margin-top: 50px;
   }
   .details h3 {
     font-size: 2em;
@@ -11,5 +11,31 @@
     margin-top: 40px;
   }
   .featured {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
+    padding: 0px 5px;
+  }
+
+  .details {
+    max-width: 100%;
+    text-align: justify;
+  }
+  .side_panel h5 {
+    font-size: medium;
+    text-align: left;
+  }
+  .side_panel h4 {
+    text-align: center;
+    padding-top: 10px;
+  }
+
+  .side_panel .info {
+    padding: 0px 10px;
+  }
+
+  .side_panel {
+    float: right;
+    max-width: 25%;
+    margin-left: 30px;
+    background: #666666;
+    border-radius: 10px;
   }

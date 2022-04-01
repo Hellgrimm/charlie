@@ -8,13 +8,13 @@ module.exports = {
   /* Your site config here */
   plugins: [
     `gatsby-transformer-remark`,
-    {
+    /*{
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `locations`,
         path: `${__dirname}/src/locations/`,
       },
-    },
+    },*/
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -34,8 +34,8 @@ module.exports = {
     },
   ],
   siteMetadata: {
-    title: 'AureliaWorld',
-    description: 'Stempunk world site',
-    copyright: 'This website is copyright 2022 AureliaWorld'
+    title: 'The Game',
+    description: 'Game world site',
+    copyright: 'This website is copyright 2022 Cordi'
   }
 }

@@ -5,10 +5,10 @@ export default function About() {
   return (
     <Layout>
     <div>
-        <h1>About Page</h1>
-        <p>Consectetur magna Lorem do do enim est aliquip tempor elit in nostrud quis in. Minim est deserunt reprehenderit amet consequat esse nisi sit commodo ipsum aliquip anim. Magna proident labore velit occaecat aliquip ad velit dolor dolore ea irure quis.</p>
-        <p>Consectetur magna Lorem do do enim est aliquip tempor elit in nostrud quis in. Minim est deserunt reprehenderit amet consequat esse nisi sit commodo ipsum aliquip anim. Magna proident labore velit occaecat aliquip ad velit dolor dolore ea irure quis.</p>
-        <p>Consectetur magna Lorem do do enim est aliquip tempor elit in nostrud quis in. Minim est deserunt reprehenderit amet consequat esse nisi sit commodo ipsum aliquip anim. Magna proident labore velit occaecat aliquip ad velit dolor dolore ea irure quis.</p>
+        <h1>About Page</h1><br></br>
+        <h2>Aurelia - the world of steampunk and sience.</h2>
+        <p>My nickname is Hellgrim, and I'm a creator of Aurelia world.</p>
+        <p>This world was created in 2019 and is developing till today.</p>
     </div>
     </Layout>
   );
