@@ -6,6 +6,7 @@
 
 module.exports = {
   /* Your site config here */
+  pathPrefix: "/charlie",
   plugins: [
     `gatsby-transformer-remark`,
     /*{
